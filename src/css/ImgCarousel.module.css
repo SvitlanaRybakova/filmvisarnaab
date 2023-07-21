@@ -1,0 +1,74 @@
+.caroImg {
+  height: 200px;
+  min-width: 100%;
+  object-fit: cover;
+}
+.captionText {
+  color: #e1e1e1;
+  background-color: #333333cc;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+}
+.welcomeImg {
+  filter: brightness(0.7);
+}
+.welcomeText {
+  font-family: "Limelight";
+  font-size: 1rem;
+}
+p.welcomeText {
+  font-size: 1.5rem;
+  padding: 0.2rem 0.6rem;
+}
+.captionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0;
+}
+p.movieTitleCaption {
+  font-family: "Limelight";
+  font-size: 1rem;
+  color: #e87209;
+  position: relative;
+  margin: 0;
+}
+.screeningCaption {
+  background-color: #e1e1e1cc;
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  top: -25px;
+  left: -50px;
+  transform: rotate(-20deg);
+}
+
+@media screen and (min-width: 576px){
+  .caroImg {
+    height: 300px;
+  }
+  .welcomeText {
+    font-size: 1.2rem;
+  }
+  p.welcomeText {
+    font-size: 2.5rem;
+  }
+  p.movieTitleCaption {
+    font-size: 1.5rem;
+  }
+  .screeningCaption {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .caroImg {
+    height: 400px;
+  }
+  p.movieTitleCaption {
+    font-size: 2rem;
+  }
+}
